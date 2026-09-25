@@ -1,0 +1,127 @@
+:root {
+    --clr-bg: hsl(217, 54%, 11%);  
+    --clr-text: hsl(215, 51%, 70%); 
+    --clr-accent: hsl(178, 100%, 50%); 
+    --clr-accent-overlay: hsl(178, 100%, 50%, 0.5); 
+    --clr-highlight: hsl(0, 0%, 100%); 
+}
+
+body {
+    background-color: var(--clr-bg);   
+    color: var(--clr-text);
+    font-family: Outfit;
+    font-size: 12px;
+    height: 95vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 15px hsl(0, 0%, 0%, 0.30)
+}
+
+.card__image__holder {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__image {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card__image__holder:hover {
+    cursor: pointer;
+}
+
+.card__image__view {
+    position: absolute;
+    background-color: var(--clr-accent-overlay);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card__image__holder:hover .card__image__view {
+    opacity: 1;
+}
+
+.card__image__view img {
+    max-width: 30px;
+}
+
+.card__header {
+    font-weight: 600;
+}
+
+.card__body {
+    font-weight: 300;
+}
+
+a {
+    color : var(--clr-highlight);
+    transition: color 0.3s ease;
+}
+a:hover {
+    color : var(--clr-accent);
+    cursor: pointer;
+}
+
+.card__creator {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 12px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.card__creator img {
+    max-width: 20px;
+    border-radius: 100%;
+    border: 1px solid var(--clr-highlight);
+}
+.center-text-hzl {
+    display: flex;
+    align-items: center;
+}
+
+.card__status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-top: 5px;
+}
+.card__status > * {
+    display: flex;
+    align-items: center;
+}
+
+.card__status__currency img {
+    max-width: 7px;
+    margin-right: 5px;
+}
+
+.card__status__currency {
+    flex-grow: 1;
+    color:var(--clr-accent);
+}
+
+.card__status__time img {
+    max-width: 10px;
+    margin-right: 5px;
+}
