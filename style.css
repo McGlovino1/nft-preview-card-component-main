@@ -23,7 +23,7 @@ body {
 
 .card {
     background-color: hsl(216, 50%, 16%);
-    max-width: 300px;
+    max-width: 325px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 25px 15px hsl(0, 0%, 0%, 0.30)
@@ -84,14 +84,15 @@ a:hover {
 .card__creator {
     border-top: 1px solid hsl(215, 32%, 27%);
     padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     gap: 10px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .card__creator img {
-    max-width: 20px;
+    max-width: 30px;
     border-radius: 100%;
     border: 1px solid var(--clr-highlight);
 }
@@ -112,7 +113,7 @@ a:hover {
 }
 
 .card__status__currency img {
-    max-width: 7px;
+    max-width: 10px;
     margin-right: 5px;
 }
 
@@ -122,6 +123,6 @@ a:hover {
 }
 
 .card__status__time img {
-    max-width: 10px;
+    max-width: 13px;
     margin-right: 5px;
 }
