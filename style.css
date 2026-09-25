@@ -10,7 +10,7 @@ body {
     background-color: var(--clr-bg);   
     color: var(--clr-text);
     font-family: Outfit;
-    font-size: 12px;
+    font-size: 18px;
     height: 95vh;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .card {
     background-color: hsl(216, 50%, 16%);
-    max-width: 200px;
+    max-width: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 25px 15px hsl(0, 0%, 0%, 0.30)
@@ -83,11 +83,11 @@ a:hover {
 
 .card__creator {
     border-top: 1px solid hsl(215, 32%, 27%);
-    padding-top: 12px;
+    padding-top: 1rem;
     display: flex;
     gap: 10px;
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .card__creator img {
@@ -103,7 +103,7 @@ a:hover {
 .card__status {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     padding-top: 5px;
 }
 .card__status > * {
